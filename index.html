@@ -31,7 +31,48 @@
       padding: 2rem;
     }
 
-    .blog-post {
+    .intro-paper {
+      background: radial-gradient(circle, #111133, #000022);
+      border: 2px solid #0ff;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 25px;
+      box-shadow: 0 0 25px #0ff6, inset 0 0 15px #0ff3;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .intro-paper::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      left: -20%;
+      width: 140%;
+      height: 140%;
+      background: linear-gradient(45deg, transparent, #0ff2, transparent);
+      transform: rotate(0deg);
+      animation: shine 4s linear infinite;
+    }
+
+    @keyframes shine {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .intro-paper h2 {
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro-paper p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #ddd;
+    }
+
+    .blog-post1 {
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid #0ff;
       padding: 2rem;
@@ -41,7 +82,7 @@
       transition: transform 0.3s;
     }
 
-    .blog-post:hover {
+    .blog-post1:hover {
       transform: scale(1.02);
       box-shadow: 0 0 30px #0ff;
     }
@@ -68,45 +109,36 @@
   </style>
 </head>
 <body>
-  <header>🚀 1Blog2 — The Futuristic Blog</header>
+  <header>🚀 1Blog2</header>
 
   <main>
-    <div class="blog-post">
+    <div class="intro-paper">
       <h2>🌌 Welcome to the Future</h2>
       <p>You're now reading <strong>1Blog2</strong>, where imagination meets innovation. This blog is a gateway into futuristic ideas, tech dreams, and digital design. Whether you're a coder, a creator, or a curious mind—you're in the right place.</p>
     </div>
 
-    <div class="blog-post">
-      <h2>🧠 AI, Code & Cosmic Thoughts</h2>
-      <p>From artificial intelligence to quantum theory, we'll share insights that matter. Expect colorful concepts, cutting-edge code snippets, and visionary storytelling. The future isn’t coming — it's already here.</p>
-    </div>
-
-    <div class="blog-post">
-      <h2>💻 Interfaces of Tomorrow</h2>
-      <p>Design isn't just how it looks — it's how it feels. With 1Blog2, you'll explore UIs that glow, animate, and inspire. Every pixel should serve purpose and passion. Let's code it right, and make it bright.</p>
-    </div>
-    <div class="blog-post">
+    <div class="blog-post1">
       <h2>🏆Famous Awards🏆</h2>
-      <p>कौनसा पुरुस्कार कब शुरू हुआ....
-
-⚡️1901 = नोबेल पुरस्कार
-⚡️1929 = ऑस्कर अवार्ड
-⚡️1954 = भारत रत्न
-⚡️1961 = ज्ञानपीठ पुरस्कार
-⚡️1995 = गांधी शांति पुरस्कार
-⚡️1985 = द्रोणाचार्य पुरस्कार
-⚡️1969 = मैन बुकर पुरस्कार
-⚡️1961 = अर्जुन पुरस्कार
-⚡️1917 = पुलित्जर पुरस्कार
-⚡️1992 = व्यास सम्मान
-⚡️1952 = कलिंग पुरस्कार
-⚡️1991 = सरस्वती सम्मान
-⚡️1969 = दादा साहब फाल्के पुरस्कार
-⚡️1957 = रेमन मैग्सेसे पुरस्कार
-⚡️1992 = राजीव गांधी खेल रत्न
-⚡️1955 = साहित्य अकादमी पुरस्कार
-⚡️1954 = राष्ट्रीय फिल्म पुरस्कार
-⚡️1958 = शांति स्वरूप भटनागर</p></div>
+      <p>कौनसा पुरुस्कार कब शुरू हुआ....<br>
+      ⚡️1901 = नोबेल पुरस्कार<br>
+      ⚡️1929 = ऑस्कर अवार्ड<br>
+      ⚡️1954 = भारत रत्न<br>
+      ⚡️1961 = ज्ञानपीठ पुरस्कार<br>
+      ⚡️1995 = गांधी शांति पुरस्कार<br>
+      ⚡️1985 = द्रोणाचार्य पुरस्कार<br>
+      ⚡️1969 = मैन बुकर पुरस्कार<br>
+      ⚡️1961 = अर्जुन पुरस्कार<br>
+      ⚡️1917 = पुलित्जर पुरस्कार<br>
+      ⚡️1992 = व्यास सम्मान<br>
+      ⚡️1952 = कलिंग पुरस्कार<br>
+      ⚡️1991 = सरस्वती सम्मान<br>
+      ⚡️1969 = दादा साहब फाल्के पुरस्कार<br>
+      ⚡️1957 = रेमन मैग्सेसे पुरस्कार<br>
+      ⚡️1992 = राजीव गांधी खेल रत्न<br>
+      ⚡️1955 = साहित्य अकादमी पुरस्कार<br>
+      ⚡️1954 = राष्ट्रीय फिल्म पुरस्कार<br>
+      ⚡️1958 = शांति स्वरूप भटनागर</p>
+    </div>
   </main>
 
   <footer>© 2025 1Blog2. Powered by imagination and code by Chitransh Ganesh Yadav. 🚀</footer>
